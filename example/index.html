@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLE RelayClick Demo</title>
+  <meta name="description" conten="Control Relay over BLE with Arduino101">
+  <link rel="stylesheet" type="text/css" href="/lendmeyourears/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/lendmeyourears/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="/lendmeyourears/fonts/fontawesome-webfont.ttf" />
+ <style> .indented { padding-left: 50pt; padding-right: 50pt; } </style> 
+</head>
+
+<body>
+  <br/>
+  <h1 class="indented" style="color:#1cacf7;font-family:Verdana">Hackster Live - March 2017 Workshop</h1>
+  <br/>
+  <p class="indented">Click the bluetooth icon below and pair with the device matching the "local name" you set in line 126 of your arduino code.</p>
+  <div class="switch">
+    <input type="checkbox" id="bleSwitch">
+    <label><i class="fa fa-bluetooth"></i></label>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <p font color="ffffff" class="indented">Create unique name for relay one <input id="cmd1"></p>
+  <p class="indented">Create unique name for relay two <input id="cmd2"></p>
+  <br/>
+  <p class="indented">Click save when finished
+  <button onclick="saveclicked()">
+save
+</button></p>
+<br/>
+<br/>
+<br/>
+<p class="indented" style="font-family:Verdana;font-size:13px"><b>This workshop is sponsored by:</b>
+<br/>
+<img src=https://upload.wikimedia.org/wikipedia/commons/e/eb/Intel-logo.jpg alt="Intel Logo" style="width:104px;height:110px;" hspace="40px">
+<br/>
+<br/>
+<img src=https://www.hackster.io/assets/hackster_logo_blue-03ea84833aa0dcf8f33be76d265d37340c7cd1ceb77a74429deb631ef0261e8f.png alt="Hackster Logo" style="width:229px;height:50px;" hspace="40px">
+</p>
+  <script src="/lendmeyourears/annyang/annyang.min.js"></script>
+  <script src="/lendmeyourears/relayClick.js"></script>
+  <script src="/lendmeyourears/app.js"></script>
+</body>
+
+</html>
